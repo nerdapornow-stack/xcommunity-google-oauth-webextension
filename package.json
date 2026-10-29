@@ -1,0 +1,21 @@
+{
+	"name": "xcommunity-google-oauth-webextension",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"lint": "eslint .",
+		"format": "prettier --write .",
+		"check:format": "prettier --check .",
+		"lint:firefox": "web-ext lint --source-dir web-ext-artifacts/firefox",
+		"test": "bun test ./test"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.0.0",
+		"eslint": "^10.8.0",
+		"globals": "^15.0.0",
+		"happy-dom": "^20.14.5",
+		"prettier": "^3.9.6",
+		"typescript-eslint": "^8.59.2",
+		"web-ext": "^10.6.0"
+	}
+}
